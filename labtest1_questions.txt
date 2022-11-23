@@ -1,0 +1,75 @@
+### Robotics lab - 221 LIA 001 
+#### lab test - 1  
+#### November 22, 2022 
+#### Test duration: 1 hour 
+
+Instructions
+============
+1. The lab test is a mix of theory and viva questions
+2. clone the assignment folder on to your PC
+3. Once you have completed the test, commit to the remote assignment folder with the commit message 'lab_test1_submission'
+4. Answers that require you to type in answers are to be entered in a text file named <your name>.txt and commited to the assignment folder. 
+5. You have to copy the question along with the question number from the file 'labtest1.questions.txt on to the txt file in istruction 4. Then type in the answer below.
+6. For questions that require you to submit screencast, save them to videos folder with the proper file name mentioned in the question.
+
+Note: Screencast is to be done with builtin screen recorder of Ubuntu 20.04.
+default duration of screencast is 30 seconds. This would be sufficient for our lab test.
+To modify the duration of screencast use the terminal command
+gsettings set org.gnome.settings-daemon.plugins.media-keys max-screencast-length <duration in seconds>
+
+**********Test Questions***********
+===================================
+1. Create a ros package 'lab_test1_pkg' .
+- The scripts created as answers to the questions that follow are to be part of the package 'lab_test1_pkg'
+- For submitting the test copy the package 'lab_test1_pkg' to the cloned assignment folder and commit to remote assignment folder
+
+2. Write and execute python script based publisher subscriber. 
+
+# Publisher
+- The publisher name should be <your first name>_pub
+- Topic name should be 'robotics_labtest1'
+- Publish a string message 'hello robotics lab' at intervals of 3 seconds
+- Run until the node is stopped by keyboard interrupt
+- Save the script as <yourname>_lab_pub1.py
+- Execute the script
+
+In the text file '<your name>.txt' type down the answers to the following questions:
+
+2.1. What are the nodes currently running. write down their names
+2.2. What topics are currently running. write down their names
+2.3. Screencast the terminal outputs of questions 2.1 and 2.2. Save the file in the video folder as one_pub.webm
+2.4. What happens if you try to launch a currently running publisher in another terminal
+2.5. Modify the code to simultaneously run three instances of the publisher
+2.6. On executing the code modified in step 2.5 :
+    a) What are the nodes currently running. write down their names
+    b) What topics are currently running. write down their names
+    c) launch rqt_graph. record screen. save the video as multiple_pub.webm
+    d) Uncheck the option 'debug' in rqt_graph gui and record screen. Save as multiple_pub_debug.webm
+    e) Comment on the observation in step d
+2.7. What is the use of rospy.loginfo().
+
+# Subscriber
+
+- Create a subscribe to the topic 'robotics_labtest1'. Name of the subscriber should be <your first name>_sub
+- Subscriber should run until it is stopped 
+
+2.8. What are the nodes currently running. write down their names
+2.9. What are the topics currently running. write down their names
+2.10. Screencast the terminal outputs of questions 2.8 and 2.9. Save the file in the video folder as one_sub.webm
+2.11. What happens if you try to launch a currently running subscriber in another terminal
+2.12. Modify the code to simultaneously run three instances of the publisher
+2.13. On executing the code modified in step 2.12 :
+    a) What are the nodes currently running. write down their names
+    b) What topics are currently running. write down their names
+    c) launch rqt_graph. record screen. save the video as multiple_pub.webm
+    d) Uncheck the option 'debug' in rqt_graph gui and record screen. Save as multiple_sub_debug.webm
+    e) Comment on the observation in step d
+    
+
+
+
+
+
+    
+
+
